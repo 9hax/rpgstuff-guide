@@ -97,6 +97,7 @@ def create_recipe_snippets():
             snippet = str(descriptionTemplate)
         else:
             snippet = ''
+            materials = " ".join([*set(m.replace('_', ' ') for r in item['recipe'] for m in r)])
             size = "3x3" if len(item['recipe']) == 3 else "2x2"
             for row in item['recipe']:
                 snippet = snippet
@@ -106,10 +107,13 @@ def create_recipe_snippets():
                     else:
                         slothtml = str(slotTemplate)
                         slothtml = slothtml.replace("ITEMID", slot.lower().replace(" ",""))
+                        slothtml = slothtml.replace("ITEMNAME", slot.replace('_', ' ').title())
                         slothtml = slothtml.replace("ITEM", slot)
                         snippet = snippet + slothtml
                 snippet = snippet
-            snippet = recipeTemplate.replace("RECIPE", snippet).replace("SIZE", size)
+            snippet = recipeTemplate.replace("RECIPE", snippet)
+            snippet = snippet.replace("SIZE", size)
+            snippet = snippet.replace("MATERIALS", materials)
 
         snippet = snippet.replace("TITLEID", item['title'].lower().replace(" ", ""))
         snippet = snippet.replace("TITLE", item['title'])
@@ -132,7 +136,7 @@ def build_page():
 
 
 descriptionTemplate = '''
-    <article id="TITLEID" class="recipe">
+    <article id="TITLEID" class="recipe" data-search="TITLE">
       <h2>TITLE</h2>
       <p class="recipe-description">DESCRIPTION</p>
       <div class="mcui">
@@ -152,7 +156,7 @@ descriptionTemplate = '''
 
 
 recipeTemplate = '''
-    <article id="TITLEID" class="recipe">
+    <article id="TITLEID" class="recipe" data-search="TITLE MATERIALS">
       <h2>TITLE</h2>
       <p class="recipe-description">DESCRIPTION</p>
       <div class="mcui">
@@ -174,7 +178,7 @@ recipeTemplate = '''
       </div>
     </article>'''
 
-slotTemplate = '''<div class="invslot"><a href="#ITEMID" title="ITEM" class="invslot-image minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a><span class="invslot-text"></span></div>'''
+slotTemplate = '''<div class="invslot"><a href="#ITEMID" title="ITEMNAME" class="invslot-image minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a><span class="invslot-text"></span></div>'''
 
 
 startTemplate = '''
@@ -189,6 +193,9 @@ startTemplate = '''
 
   <body>
     <h1>RPGStuff Crafting and Item Guide - by <a href="https://9h.ax">9hax</a></h1>
+    <div class="search">
+        <input id="search-form" class="search-input" placeholder="Enter something to search...">
+    </div>
     <div id="minetip-tooltip" style="display: none">
       <span class="minetip-title" id="minetip-text">Minecraft Tip</span>
     </div>
@@ -196,6 +203,7 @@ startTemplate = '''
 
 endTemplate = '''</div></body>
   <script src="css/minetip.js" defer></script>
+  <script src="css/search.js" defer></script>
 </html>
 '''
 

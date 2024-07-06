@@ -11,6 +11,7 @@ body {
   background: rgb(4,115,14);
   background: linear-gradient(36deg, rgba(4,115,14,1) 0%, rgba(33,33,221,1) 51%, rgba(0,212,255,1) 100%);
   padding: 0.5rem;
+  min-height: 100vh;
 }
 
 :target {
@@ -23,10 +24,30 @@ h1 {
   font-weight: normal;
   text-align: center;
   margin: 2rem 0;
+  margin-bottom: 1.5rem;
 }
 
 h1 a {
   color: inherit;
+}
+
+.search {
+  margin: 1.5rem 0;
+}
+
+.search .search-input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #fff6;
+}
+.search .search-input::placeholder {
+  font-style: italic;
 }
 
 .collection {
@@ -48,6 +69,10 @@ article {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+article.hide {
+  display: none;
 }
 
 article h2 {
