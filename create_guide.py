@@ -107,6 +107,7 @@ def create_recipe_snippets():
                     else:
                         slothtml = str(slotTemplate)
                         slothtml = slothtml.replace("ITEMID", slot.lower().replace(" ",""))
+                        slothtml = slothtml.replace("ITEMNAME", slot.replace('_', ' ').title())
                         slothtml = slothtml.replace("ITEM", slot)
                         snippet = snippet + slothtml
                 snippet = snippet
@@ -177,7 +178,7 @@ recipeTemplate = '''
       </div>
     </article>'''
 
-slotTemplate = '''<div class="invslot"><a href="#ITEMID" title="ITEM" class="invslot-image minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a><span class="invslot-text"></span></div>'''
+slotTemplate = '''<div class="invslot"><a href="#ITEMID" title="ITEMNAME" class="invslot-image minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a><span class="invslot-text"></span></div>'''
 
 
 startTemplate = '''
