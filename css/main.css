@@ -14,11 +14,8 @@ body {
 }
 
 :target {
-  outline: 1rem solid rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-}
-.collection:has(:target) article:not(:target) {
-  opacity: 0.75
+  outline: 0.5rem solid rgba(0, 0, 0, 0.3);
+  z-index: 4;
 }
 
 h1 {
