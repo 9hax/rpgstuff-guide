@@ -5,6 +5,10 @@ body {
   background: linear-gradient(36deg, rgba(4,115,14,1) 0%, rgba(33,33,221,1) 51%, rgba(0,212,255,1) 100%);
 }
 
+:target > span {
+  background-color: #89bb47;
+}
+
 .collection {
   display: grid;
   row-gap: 10px;
