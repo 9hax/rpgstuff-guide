@@ -10,11 +10,14 @@
 
   <body>
     <h1>RPGStuff Crafting and Item Guide - by <a href="https://9h.ax">9hax</a></h1>
+    <div class="search">
+        <input id="search-form" class="search-input" placeholder="Enter something to search...">
+    </div>
     <div id="minetip-tooltip" style="display: none">
       <span class="minetip-title" id="minetip-text">Minecraft Tip</span>
     </div>
     <div class="collection">
-    <article id="basicstaffcore" class="recipe">
+    <article id="basicstaffcore" class="recipe" data-search="Basic Staff Core stick amethyst shard air">
       <h2>Basic Staff Core</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -35,7 +38,7 @@
           </div>
       </div>
     </article>
-    <article id="durablestring" class="recipe">
+    <article id="durablestring" class="recipe" data-search="Durable String air white wool">
       <h2>Durable String</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -56,7 +59,7 @@
           </div>
       </div>
     </article>
-    <article id="pristinediamond" class="recipe">
+    <article id="pristinediamond" class="recipe" data-search="Pristine Diamond nether star diamond block">
       <h2>Pristine Diamond</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -77,7 +80,7 @@
           </div>
       </div>
     </article>
-    <article id="chargedemerald" class="recipe">
+    <article id="chargedemerald" class="recipe" data-search="Charged Emerald">
       <h2>Charged Emerald</h2>
       <p class="recipe-description">Strike an emerald with lightning.</p>
       <div class="mcui">
@@ -94,7 +97,7 @@
           </div>
       </div>
     </article>
-    <article id="withercore" class="recipe">
+    <article id="withercore" class="recipe" data-search="Wither Core">
       <h2>Wither Core</h2>
       <p class="recipe-description">Chance (1/50) of being dropped by The Wither.</p>
       <div class="mcui">
@@ -111,7 +114,7 @@
           </div>
       </div>
     </article>
-    <article id="advancedstaffcore" class="recipe">
+    <article id="advancedstaffcore" class="recipe" data-search="Advanced Staff Core blaze rod Charged Emerald air">
       <h2>Advanced Staff Core</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -132,7 +135,7 @@
           </div>
       </div>
     </article>
-    <article id="energizedpowder" class="recipe">
+    <article id="energizedpowder" class="recipe" data-search="Energized Powder redstone dust glowstone dust">
       <h2>Energized Powder</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -153,7 +156,7 @@
           </div>
       </div>
     </article>
-    <article id="energizedcrystal" class="recipe">
+    <article id="energizedcrystal" class="recipe" data-search="Energized Crystal amethyst block Energized Powder">
       <h2>Energized Crystal</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -174,7 +177,7 @@
           </div>
       </div>
     </article>
-    <article id="endercore" class="recipe">
+    <article id="endercore" class="recipe" data-search="Ender Core">
       <h2>Ender Core</h2>
       <p class="recipe-description">Chance (1/25) of being dropped by The Ender Dragon.</p>
       <div class="mcui">
@@ -191,7 +194,7 @@
           </div>
       </div>
     </article>
-    <article id="fineleather" class="recipe">
+    <article id="fineleather" class="recipe" data-search="Fine Leather leather Durable String">
       <h2>Fine Leather</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -212,7 +215,7 @@
           </div>
       </div>
     </article>
-    <article id="heavyenderpearl" class="recipe">
+    <article id="heavyenderpearl" class="recipe" data-search="Heavy Ender Pearl ender pearl">
       <h2>Heavy Ender Pearl</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -233,7 +236,7 @@
           </div>
       </div>
     </article>
-    <article id="goldenmatrix" class="recipe">
+    <article id="goldenmatrix" class="recipe" data-search="Golden Matrix Charged Emerald gold block">
       <h2>Golden Matrix</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -254,7 +257,7 @@
           </div>
       </div>
     </article>
-    <article id="blackonyx" class="recipe">
+    <article id="blackonyx" class="recipe" data-search="Black Onyx">
       <h2>Black Onyx</h2>
       <p class="recipe-description">Chance (1/15) of being dropped by a charged Creeper.</p>
       <div class="mcui">
@@ -271,7 +274,7 @@
           </div>
       </div>
     </article>
-    <article id="indestructiblestick" class="recipe">
+    <article id="indestructiblestick" class="recipe" data-search="Indestructible Stick stick netherite ingot air">
       <h2>Indestructible Stick</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -292,7 +295,7 @@
           </div>
       </div>
     </article>
-    <article id="darkmatter" class="recipe">
+    <article id="darkmatter" class="recipe" data-search="Dark Matter Pristine Diamond Black Onyx">
       <h2>Dark Matter</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -313,7 +316,7 @@
           </div>
       </div>
     </article>
-    <article id="hellfire" class="recipe">
+    <article id="hellfire" class="recipe" data-search="Hellfire">
       <h2>Hellfire</h2>
       <p class="recipe-description">Dropped by Nether Mobs. Combine 9 in a Crafting Table to reach next tier. Goes up to Tier 5.</p>
       <div class="mcui">
@@ -330,7 +333,7 @@
           </div>
       </div>
     </article>
-    <article id="chunkofsculk" class="recipe">
+    <article id="chunkofsculk" class="recipe" data-search="Chunk of Sculk">
       <h2>Chunk of Sculk</h2>
       <p class="recipe-description">Common Chance of being dropped by The Warden.</p>
       <div class="mcui">
@@ -347,7 +350,7 @@
           </div>
       </div>
     </article>
-    <article id="wardencore" class="recipe">
+    <article id="wardencore" class="recipe" data-search="Warden Core">
       <h2>Warden Core</h2>
       <p class="recipe-description">Chance (1/100) of being dropped by The Warden.</p>
       <div class="mcui">
@@ -364,7 +367,7 @@
           </div>
       </div>
     </article>
-    <article id="fierysentinelcore" class="recipe">
+    <article id="fierysentinelcore" class="recipe" data-search="Fiery Sentinel Core">
       <h2>Fiery Sentinel Core</h2>
       <p class="recipe-description">Chance (1/25) of being dropped by a Fiery Sentinel.</p>
       <div class="mcui">
@@ -381,7 +384,7 @@
           </div>
       </div>
     </article>
-    <article id="emberfragment" class="recipe">
+    <article id="emberfragment" class="recipe" data-search="Ember Fragment">
       <h2>Ember Fragment</h2>
       <p class="recipe-description">1-3 Dropped by Fiery Sentinel</p>
       <div class="mcui">
@@ -398,7 +401,7 @@
           </div>
       </div>
     </article>
-    <article id="zombieheart" class="recipe">
+    <article id="zombieheart" class="recipe" data-search="Zombie Heart">
       <h2>Zombie Heart</h2>
       <p class="recipe-description">Chance (1/10) of being dropped by a Zombie Enforcer.</p>
       <div class="mcui">
@@ -415,7 +418,7 @@
           </div>
       </div>
     </article>
-    <article id="foulflesh" class="recipe">
+    <article id="foulflesh" class="recipe" data-search="Foul Flesh">
       <h2>Foul Flesh</h2>
       <p class="recipe-description">Chance of being dropped by a Zombie Enforcer.</p>
       <div class="mcui">
@@ -432,7 +435,7 @@
           </div>
       </div>
     </article>
-    <article id="tarantulasilk" class="recipe">
+    <article id="tarantulasilk" class="recipe" data-search="Tarantula Silk">
       <h2>Tarantula Silk</h2>
       <p class="recipe-description">Chance (1/10) of being dropped by a Tarantula.</p>
       <div class="mcui">
@@ -449,7 +452,7 @@
           </div>
       </div>
     </article>
-    <article id="prismarinefragment" class="recipe">
+    <article id="prismarinefragment" class="recipe" data-search="Prismarine Fragment">
       <h2>Prismarine Fragment</h2>
       <p class="recipe-description">Chance (1/3) of being dropped by a Guardian.</p>
       <div class="mcui">
@@ -466,7 +469,7 @@
           </div>
       </div>
     </article>
-    <article id="gildedprismarineartifact" class="recipe">
+    <article id="gildedprismarineartifact" class="recipe" data-search="Gilded Prismarine Artifact">
       <h2>Gilded Prismarine Artifact</h2>
       <p class="recipe-description">Chance (1/25) of being dropped by an Elder Guardian, Grants immunity to all negative potion effects.</p>
       <div class="mcui">
@@ -483,7 +486,7 @@
           </div>
       </div>
     </article>
-    <article id="stellarfragment" class="recipe">
+    <article id="stellarfragment" class="recipe" data-search="Stellar Fragment">
       <h2>Stellar Fragment</h2>
       <p class="recipe-description">Chance (1/5) of being dropped by the Cosmic Guardian.</p>
       <div class="mcui">
@@ -500,7 +503,7 @@
           </div>
       </div>
     </article>
-    <article id="swordofthestars" class="recipe">
+    <article id="swordofthestars" class="recipe" data-search="Sword of the Stars Stellar Fragment Indestructible Stick air">
       <h2>Sword of the Stars</h2>
       <p class="recipe-description">Not a Lightsaber.</p>
       <div class="mcui">
@@ -521,7 +524,7 @@
           </div>
       </div>
     </article>
-    <article id="simpledrillengine" class="recipe">
+    <article id="simpledrillengine" class="recipe" data-search="Simple Drill Engine iron ingot redstone dust copper block">
       <h2>Simple Drill Engine</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -542,7 +545,7 @@
           </div>
       </div>
     </article>
-    <article id="advanceddrillengine" class="recipe">
+    <article id="advanceddrillengine" class="recipe" data-search="Advanced Drill Engine Golden Matrix netherite ingot Energized Powder">
       <h2>Advanced Drill Engine</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -563,7 +566,7 @@
           </div>
       </div>
     </article>
-    <article id="rubydrillengine" class="recipe">
+    <article id="rubydrillengine" class="recipe" data-search="Ruby Drill Engine Golden Matrix Fine Ruby Gemstone iron block">
       <h2>Ruby Drill Engine</h2>
       <p class="recipe-description"></p>
       <div class="mcui">
@@ -584,7 +587,7 @@
           </div>
       </div>
     </article>
-    <article id="gemstone(tiered)" class="recipe">
+    <article id="gemstone(tiered)" class="recipe" data-search="Gemstone (Tiered) Gemstone (Tiered)">
       <h2>Gemstone (Tiered)</h2>
       <p class="recipe-description">Rarely Found when using a mining drill below Y=0. (40% Ruby, 15% Sapphire, Amethyst, Peridot, 10% Apatite, 5% Topaz)</p>
       <div class="mcui">
@@ -605,7 +608,7 @@
           </div>
       </div>
     </article>
-    <article id="gemstoneaxe" class="recipe">
+    <article id="gemstoneaxe" class="recipe" data-search="Gemstone Axe Fine Sapphire Gemstone Polished Axe Indestructible Stick Fine Amethyst Gemstone Fine Peridot Gemstone air">
       <h2>Gemstone Axe</h2>
       <p class="recipe-description">Look Ma, I'm rich!</p>
       <div class="mcui">
@@ -626,7 +629,7 @@
           </div>
       </div>
     </article>
-    <article id="souloftherevenant" class="recipe">
+    <article id="souloftherevenant" class="recipe" data-search="Soul of the Revenant">
       <h2>Soul of the Revenant</h2>
       <p class="recipe-description">Chance (1/50) of being dropped by a Revenant Zombie.</p>
       <div class="mcui">
@@ -643,7 +646,7 @@
           </div>
       </div>
     </article>
-    <article id="lumberaxe" class="recipe">
+    <article id="lumberaxe" class="recipe" data-search="Lumber Axe iron ingot stick Charged Emerald air">
       <h2>Lumber Axe</h2>
       <p class="recipe-description">Cuts Down Whole Trees.</p>
       <div class="mcui">
@@ -664,7 +667,7 @@
           </div>
       </div>
     </article>
-    <article id="mininghammer" class="recipe">
+    <article id="mininghammer" class="recipe" data-search="Mining Hammer iron ingot Charged Emerald stick air">
       <h2>Mining Hammer</h2>
       <p class="recipe-description">Mines 9 Blocks at once.</p>
       <div class="mcui">
@@ -685,7 +688,7 @@
           </div>
       </div>
     </article>
-    <article id="staffofpunishment" class="recipe">
+    <article id="staffofpunishment" class="recipe" data-search="Staff of Punishment Basic Staff Core air dried kelp">
       <h2>Staff of Punishment</h2>
       <p class="recipe-description">Creates a short-ranged beam that debuffs the first enemy it hits.</p>
       <div class="mcui">
@@ -706,7 +709,7 @@
           </div>
       </div>
     </article>
-    <article id="staffofenlightenment" class="recipe">
+    <article id="staffofenlightenment" class="recipe" data-search="Staff of Enlightenment Basic Staff Core blaze powder air">
       <h2>Staff of Enlightenment</h2>
       <p class="recipe-description">Creates a short-ranged beam that sets the first enemy it hits on fire.</p>
       <div class="mcui">
@@ -727,7 +730,7 @@
           </div>
       </div>
     </article>
-    <article id="staffoflightning" class="recipe">
+    <article id="staffoflightning" class="recipe" data-search="Staff of Lightning ghast tear Basic Staff Core air">
       <h2>Staff of Lightning</h2>
       <p class="recipe-description">Makes lightning strike the targeted block.</p>
       <div class="mcui">
@@ -748,7 +751,7 @@
           </div>
       </div>
     </article>
-    <article id="thunderstormstaff" class="recipe">
+    <article id="thunderstormstaff" class="recipe" data-search="Thunderstorm Staff Staff of Lightning Pristine Diamond air">
       <h2>Thunderstorm Staff</h2>
       <p class="recipe-description">Makes lots of lightning bolts strike the targeted block.</p>
       <div class="mcui">
@@ -769,7 +772,7 @@
           </div>
       </div>
     </article>
-    <article id="simplestaffofnecromancy" class="recipe">
+    <article id="simplestaffofnecromancy" class="recipe" data-search="Simple Staff of Necromancy rotten flesh Basic Staff Core air">
       <h2>Simple Staff of Necromancy</h2>
       <p class="recipe-description">Spawns 5 Zombies near the targeted block.</p>
       <div class="mcui">
@@ -790,7 +793,7 @@
           </div>
       </div>
     </article>
-    <article id="advancedstaffofnecromancy" class="recipe">
+    <article id="advancedstaffofnecromancy" class="recipe" data-search="Advanced Staff of Necromancy Simple Staff of Necromancy Pristine Diamond air">
       <h2>Advanced Staff of Necromancy</h2>
       <p class="recipe-description">Spawns 5 Wither Skeletons near the targeted block</p>
       <div class="mcui">
@@ -811,7 +814,7 @@
           </div>
       </div>
     </article>
-    <article id="witheringbow" class="recipe">
+    <article id="witheringbow" class="recipe" data-search="Withering Bow stick wither skeleton skull Durable String air">
       <h2>Withering Bow</h2>
       <p class="recipe-description">Bad for hit target.</p>
       <div class="mcui">
@@ -832,7 +835,7 @@
           </div>
       </div>
     </article>
-    <article id="whirlwindbow" class="recipe">
+    <article id="whirlwindbow" class="recipe" data-search="Whirlwind Bow stick blue ice Durable String air">
       <h2>Whirlwind Bow</h2>
       <p class="recipe-description">Shoots three arrows in quick succession.</p>
       <div class="mcui">
@@ -853,7 +856,7 @@
           </div>
       </div>
     </article>
-    <article id="relocator" class="recipe">
+    <article id="relocator" class="recipe" data-search="Relocator Heavy Ender Pearl Charged Emerald air">
       <h2>Relocator</h2>
       <p class="recipe-description">Teleports you 8 blocks forward.</p>
       <div class="mcui">
@@ -874,7 +877,7 @@
           </div>
       </div>
     </article>
-    <article id="advancedrelocator" class="recipe">
+    <article id="advancedrelocator" class="recipe" data-search="Advanced Relocator Relocator Pristine Diamond air">
       <h2>Advanced Relocator</h2>
       <p class="recipe-description">Teleports You 12 Blocks forward. Teleports up to 50 Blocks onto a targeted block while sneaking.</p>
       <div class="mcui">
@@ -895,7 +898,7 @@
           </div>
       </div>
     </article>
-    <article id="ninjadagger" class="recipe">
+    <article id="ninjadagger" class="recipe" data-search="Ninja Dagger iron ingot stick Black Onyx air">
       <h2>Ninja Dagger</h2>
       <p class="recipe-description">Buffs you after a kill.</p>
       <div class="mcui">
@@ -916,7 +919,7 @@
           </div>
       </div>
     </article>
-    <article id="hyperion" class="recipe">
+    <article id="hyperion" class="recipe" data-search="Hyperion Advanced Staff Core Wither Core Pristine Diamond air">
       <h2>Hyperion</h2>
       <p class="recipe-description">Teleports you 10 Blocks forward, explodes and deals 8 Hearts (16) damage to all surrounding enemies. Grants Absorption and Regeneration for 5 Seconds.</p>
       <div class="mcui">
@@ -937,7 +940,7 @@
           </div>
       </div>
     </article>
-    <article id="bookofforgottenknowledge" class="recipe">
+    <article id="bookofforgottenknowledge" class="recipe" data-search="Book of Forgotten Knowledge book lapis lazuli">
       <h2>Book of Forgotten Knowledge</h2>
       <p class="recipe-description">Increases the Mana Cap by 100 while held in Offhand.</p>
       <div class="mcui">
@@ -958,7 +961,7 @@
           </div>
       </div>
     </article>
-    <article id="translocator" class="recipe">
+    <article id="translocator" class="recipe" data-search="Translocator Energized Crystal ender pearl air">
       <h2>Translocator</h2>
       <p class="recipe-description">Collects nearby Items and XP.</p>
       <div class="mcui">
@@ -979,7 +982,7 @@
           </div>
       </div>
     </article>
-    <article id="portableenderchest" class="recipe">
+    <article id="portableenderchest" class="recipe" data-search="Portable Ender Chest Heavy Ender Pearl crying obsidian Energized Crystal">
       <h2>Portable Ender Chest</h2>
       <p class="recipe-description">Opens up your Ender Chest.</p>
       <div class="mcui">
@@ -1000,7 +1003,7 @@
           </div>
       </div>
     </article>
-    <article id="portablecraftingtable" class="recipe">
+    <article id="portablecraftingtable" class="recipe" data-search="Portable Crafting Table oak log ender pearl Energized Powder">
       <h2>Portable Crafting Table</h2>
       <p class="recipe-description">Craft anywhere.</p>
       <div class="mcui">
@@ -1021,7 +1024,7 @@
           </div>
       </div>
     </article>
-    <article id="polishedaxe" class="recipe">
+    <article id="polishedaxe" class="recipe" data-search="Polished Axe Indestructible Stick Black Onyx air">
       <h2>Polished Axe</h2>
       <p class="recipe-description">Heavy Hitter.</p>
       <div class="mcui">
@@ -1042,7 +1045,7 @@
           </div>
       </div>
     </article>
-    <article id="darkblade" class="recipe">
+    <article id="darkblade" class="recipe" data-search="Dark Blade Dark Matter Indestructible Stick air">
       <h2>Dark Blade</h2>
       <p class="recipe-description">You gon' die bro</p>
       <div class="mcui">
@@ -1063,7 +1066,7 @@
           </div>
       </div>
     </article>
-    <article id="delicatehoe" class="recipe">
+    <article id="delicatehoe" class="recipe" data-search="Delicate Hoe Basic Staff Core gold block air">
       <h2>Delicate Hoe</h2>
       <p class="recipe-description">Harvests only grown crops and replants automatically.</p>
       <div class="mcui">
@@ -1084,7 +1087,7 @@
           </div>
       </div>
     </article>
-    <article id="jujushortbow" class="recipe">
+    <article id="jujushortbow" class="recipe" data-search="Juju Shortbow Chunk of Sculk Durable String air">
       <h2>Juju Shortbow</h2>
       <p class="recipe-description">Shoots instantly. Flame and Punch enchantments are disabled.</p>
       <div class="mcui">
@@ -1105,7 +1108,7 @@
           </div>
       </div>
     </article>
-    <article id="terminator" class="recipe">
+    <article id="terminator" class="recipe" data-search="Terminator Indestructible Stick Warden Core Golden Matrix Tarantula Silk air">
       <h2>Terminator</h2>
       <p class="recipe-description">Shoots three arrows instantly.</p>
       <div class="mcui">
@@ -1126,7 +1129,7 @@
           </div>
       </div>
     </article>
-    <article id="dowsingrod" class="recipe">
+    <article id="dowsingrod" class="recipe" data-search="Dowsing Rod Advanced Staff Core Black Onyx air">
       <h2>Dowsing Rod</h2>
       <p class="recipe-description">Finds nearby ores of a specific type. Limited to overworld ores.</p>
       <div class="mcui">
@@ -1147,7 +1150,7 @@
           </div>
       </div>
     </article>
-    <article id="sniperbow" class="recipe">
+    <article id="sniperbow" class="recipe" data-search="Sniper Bow bow">
       <h2>Sniper Bow</h2>
       <p class="recipe-description">Shoots super fast.</p>
       <div class="mcui">
@@ -1168,7 +1171,7 @@
           </div>
       </div>
     </article>
-    <article id="wandofhealing" class="recipe">
+    <article id="wandofhealing" class="recipe" data-search="Wand of Healing Zombie Heart Basic Staff Core air">
       <h2>Wand of Healing</h2>
       <p class="recipe-description">Grants you Regeneration for a short while.</p>
       <div class="mcui">
@@ -1189,7 +1192,7 @@
           </div>
       </div>
     </article>
-    <article id="firestormstaff" class="recipe">
+    <article id="firestormstaff" class="recipe" data-search="Firestorm Staff Fiery Sentinel Core Advanced Staff Core air">
       <h2>Firestorm Staff</h2>
       <p class="recipe-description">Be careful near wooden buildings.</p>
       <div class="mcui">
@@ -1210,7 +1213,7 @@
           </div>
       </div>
     </article>
-    <article id="swordoftruth" class="recipe">
+    <article id="swordoftruth" class="recipe" data-search="Sword of Truth stick gold block air">
       <h2>Sword of Truth</h2>
       <p class="recipe-description">Deals an extra heart of true damage.</p>
       <div class="mcui">
@@ -1231,7 +1234,7 @@
           </div>
       </div>
     </article>
-    <article id="daedalusaxe" class="recipe">
+    <article id="daedalusaxe" class="recipe" data-search="Daedalus Axe Golden Matrix Indestructible Stick air">
       <h2>Daedalus Axe</h2>
       <p class="recipe-description">Makes you lucky.</p>
       <div class="mcui">
@@ -1252,7 +1255,7 @@
           </div>
       </div>
     </article>
-    <article id="turtleshelltalisman" class="recipe">
+    <article id="turtleshelltalisman" class="recipe" data-search="Turtle Shell Talisman turtle scute">
       <h2>Turtle Shell Talisman</h2>
       <p class="recipe-description">Makes you immune to knockback.</p>
       <div class="mcui">
@@ -1273,7 +1276,7 @@
           </div>
       </div>
     </article>
-    <article id="miningdrillx6000" class="recipe">
+    <article id="miningdrillx6000" class="recipe" data-search="Mining Drill x6000 iron ingot Pristine Diamond air Simple Drill Engine">
       <h2>Mining Drill x6000</h2>
       <p class="recipe-description">Better Pickaxe, needs fuel.</p>
       <div class="mcui">
@@ -1294,7 +1297,7 @@
           </div>
       </div>
     </article>
-    <article id="miningdrillx7000" class="recipe">
+    <article id="miningdrillx7000" class="recipe" data-search="Mining Drill x7000 iron ingot Advanced Drill Engine Pristine Diamond Mining Drill x6000 air">
       <h2>Mining Drill x7000</h2>
       <p class="recipe-description">Betterer Pickaxe, needs fuel</p>
       <div class="mcui">
@@ -1315,7 +1318,7 @@
           </div>
       </div>
     </article>
-    <article id="miningdrillx8000" class="recipe">
+    <article id="miningdrillx8000" class="recipe" data-search="Mining Drill x8000 iron ingot Mining Drill x6000 Pristine Diamond Ruby Drill Engine air">
       <h2>Mining Drill x8000</h2>
       <p class="recipe-description">Betterer Pickaxe, needs fuel</p>
       <div class="mcui">
@@ -1336,7 +1339,7 @@
           </div>
       </div>
     </article>
-    <article id="ritualblade" class="recipe">
+    <article id="ritualblade" class="recipe" data-search="Ritual Blade coal block copper block Basic Staff Core air">
       <h2>Ritual Blade</h2>
       <p class="recipe-description">Spawns a Revenant Zombie when killing a regular one.</p>
       <div class="mcui">
@@ -1357,7 +1360,7 @@
           </div>
       </div>
     </article>
-    <article id="wandofmending" class="recipe">
+    <article id="wandofmending" class="recipe" data-search="Wand of Mending Zombie Heart Wand of Healing air">
       <h2>Wand of Mending</h2>
       <p class="recipe-description">Grants you Regeneration for a short while.</p>
       <div class="mcui">
@@ -1378,7 +1381,7 @@
           </div>
       </div>
     </article>
-    <article id="spectralshield" class="recipe">
+    <article id="spectralshield" class="recipe" data-search="Spectral Shield Soul of the Revenant iron block">
       <h2>Spectral Shield</h2>
       <p class="recipe-description">Grants five seconds of invincibility, has a very long cooldown.</p>
       <div class="mcui">
@@ -1399,7 +1402,7 @@
           </div>
       </div>
     </article>
-    <article id="smallbackpack" class="recipe">
+    <article id="smallbackpack" class="recipe" data-search="Small Backpack leather chest air">
       <h2>Small Backpack</h2>
       <p class="recipe-description">Has 18 Slots of inventory space.</p>
       <div class="mcui">
@@ -1420,7 +1423,7 @@
           </div>
       </div>
     </article>
-    <article id="mediumbackpack" class="recipe">
+    <article id="mediumbackpack" class="recipe" data-search="Medium Backpack leather chest">
       <h2>Medium Backpack</h2>
       <p class="recipe-description">Has 36 Slots of inventory space.</p>
       <div class="mcui">
@@ -1441,7 +1444,7 @@
           </div>
       </div>
     </article>
-    <article id="largebackpack" class="recipe">
+    <article id="largebackpack" class="recipe" data-search="Large Backpack Fine Leather chest">
       <h2>Large Backpack</h2>
       <p class="recipe-description">Has 54 Slots of inventory space.</p>
       <div class="mcui">
@@ -1462,7 +1465,7 @@
           </div>
       </div>
     </article>
-    <article id="staffofrestoration" class="recipe">
+    <article id="staffofrestoration" class="recipe" data-search="Staff of Restoration Basic Staff Core gold block air">
       <h2>Staff of Restoration</h2>
       <p class="recipe-description">Heals other Players in a small circle.</p>
       <div class="mcui">
@@ -1483,7 +1486,7 @@
           </div>
       </div>
     </article>
-    <article id="frozenscythe" class="recipe">
+    <article id="frozenscythe" class="recipe" data-search="Frozen Scythe blue ice Advanced Staff Core Pristine Diamond air">
       <h2>Frozen Scythe</h2>
       <p class="recipe-description">Shoots an ice bolt that slows everything in its path.</p>
       <div class="mcui">
@@ -1504,7 +1507,7 @@
           </div>
       </div>
     </article>
-    <article id="experiencebottle" class="recipe">
+    <article id="experiencebottle" class="recipe" data-search="Experience Bottle glass bottle lapis lazuli air">
       <h2>Experience Bottle</h2>
       <p class="recipe-description">Gives you XP when thrown.</p>
       <div class="mcui">
@@ -1525,7 +1528,7 @@
           </div>
       </div>
     </article>
-    <article id="grandexperiencebottle" class="recipe">
+    <article id="grandexperiencebottle" class="recipe" data-search="Grand Experience Bottle glass bottle lapis block air">
       <h2>Grand Experience Bottle</h2>
       <p class="recipe-description">Gives you more XP when thrown.</p>
       <div class="mcui">
@@ -1546,7 +1549,7 @@
           </div>
       </div>
     </article>
-    <article id="godpotion" class="recipe">
+    <article id="godpotion" class="recipe" data-search="God Potion glass bottle Energized Powder">
       <h2>God Potion</h2>
       <p class="recipe-description">Gives you lots of positive effects for one hour.</p>
       <div class="mcui">
@@ -1567,7 +1570,7 @@
           </div>
       </div>
     </article>
-    <article id="quicktravelcookie" class="recipe">
+    <article id="quicktravelcookie" class="recipe" data-search="Quick Travel Cookie wheat Energized Powder">
       <h2>Quick Travel Cookie</h2>
       <p class="recipe-description">Teleports you forward by 1000 blocks.</p>
       <div class="mcui">
@@ -1588,7 +1591,7 @@
           </div>
       </div>
     </article>
-    <article id="fierysentinelhead" class="recipe">
+    <article id="fierysentinelhead" class="recipe" data-search="Fiery Sentinel Head Hot Hellfire iron block">
       <h2>Fiery Sentinel Head</h2>
       <p class="recipe-description">Used to summon the Fiery Sentinel by hitting an Iron Golem.</p>
       <div class="mcui">
@@ -1609,7 +1612,7 @@
           </div>
       </div>
     </article>
-    <article id="tacticalexfiltration" class="recipe">
+    <article id="tacticalexfiltration" class="recipe" data-search="Tactical Exfiltration ender eye Foul Flesh air">
       <h2>Tactical Exfiltration</h2>
       <p class="recipe-description">Keep this item in inventory. Will be consumed on death, but your inventory and XP will stay with you.</p>
       <div class="mcui">
@@ -1630,7 +1633,7 @@
           </div>
       </div>
     </article>
-    <article id="biofuel" class="recipe">
+    <article id="biofuel" class="recipe" data-search="Biofuel blaze powder wheat seeds">
       <h2>Biofuel</h2>
       <p class="recipe-description">Drag and Drop onto a drill for +500 fuel.</p>
       <div class="mcui">
@@ -1651,7 +1654,7 @@
           </div>
       </div>
     </article>
-    <article id="cloudwalkerboots" class="recipe">
+    <article id="cloudwalkerboots" class="recipe" data-search="Cloudwalker Boots blue ice Pristine Diamond air">
       <h2>Cloudwalker Boots</h2>
       <p class="recipe-description">Go Fast, Jump high! Cancels all Fall Damage.</p>
       <div class="mcui">
@@ -1672,7 +1675,7 @@
           </div>
       </div>
     </article>
-    <article id="farmerboots" class="recipe">
+    <article id="farmerboots" class="recipe" data-search="Farmer Boots leather hay air">
       <h2>Farmer Boots</h2>
       <p class="recipe-description">Go faster, prevents crop trampling.</p>
       <div class="mcui">
@@ -1693,7 +1696,7 @@
           </div>
       </div>
     </article>
-    <article id="faradayhelmet" class="recipe">
+    <article id="faradayhelmet" class="recipe" data-search="Faraday Helmet iron ingot lightning rod air">
       <h2>Faraday Helmet</h2>
       <p class="recipe-description">Makes you immune to lightning.</p>
       <div class="mcui">
@@ -1714,7 +1717,7 @@
           </div>
       </div>
     </article>
-    <article id="diversmask" class="recipe">
+    <article id="diversmask" class="recipe" data-search="Divers Mask iron ingot nautilus shell air">
       <h2>Divers Mask</h2>
       <p class="recipe-description">Hello, how are you? I am under da watur, please help me!</p>
       <div class="mcui">
@@ -1735,7 +1738,7 @@
           </div>
       </div>
     </article>
-    <article id="cementboots" class="recipe">
+    <article id="cementboots" class="recipe" data-search="Cement Boots iron ingot clay block air">
       <h2>Cement Boots</h2>
       <p class="recipe-description">Kinda Heavy.</p>
       <div class="mcui">
@@ -1756,7 +1759,7 @@
           </div>
       </div>
     </article>
-    <article id="scholarshood" class="recipe">
+    <article id="scholarshood" class="recipe" data-search="Scholars Hood leather Energized Crystal air">
       <h2>Scholars Hood</h2>
       <p class="recipe-description">Multiplies your base mana by two.</p>
       <div class="mcui">
@@ -1777,7 +1780,7 @@
           </div>
       </div>
     </article>
-    <article id="sorcerershood" class="recipe">
+    <article id="sorcerershood" class="recipe" data-search="Sorcerers Hood Energized Crystal Pristine Diamond air">
       <h2>Sorcerers Hood</h2>
       <p class="recipe-description">Multiplies your base mana by three.</p>
       <div class="mcui">
@@ -1798,7 +1801,7 @@
           </div>
       </div>
     </article>
-    <article id="grandmastershood" class="recipe">
+    <article id="grandmastershood" class="recipe" data-search="Grandmasters Hood Ender Core Fine Leather air">
       <h2>Grandmasters Hood</h2>
       <p class="recipe-description">Multiplies your base mana by four.</p>
       <div class="mcui">
@@ -1819,7 +1822,7 @@
           </div>
       </div>
     </article>
-    <article id="allseeingeye" class="recipe">
+    <article id="allseeingeye" class="recipe" data-search="All Seeing Eye Heavy Ender Pearl Energized Powder">
       <h2>All Seeing Eye</h2>
       <p class="recipe-description">Grants you Night Vision</p>
       <div class="mcui">
@@ -1840,7 +1843,7 @@
           </div>
       </div>
     </article>
-    <article id="ironwardenhelmet" class="recipe">
+    <article id="ironwardenhelmet" class="recipe" data-search="Iron Warden Helmet air iron block">
       <h2>Iron Warden Helmet</h2>
       <p class="recipe-description">Grants you five extra hearts of health, but slows you down.</p>
       <div class="mcui">
@@ -1861,7 +1864,7 @@
           </div>
       </div>
     </article>
-    <article id="goldenwardenhelmet" class="recipe">
+    <article id="goldenwardenhelmet" class="recipe" data-search="Golden Warden Helmet Iron Warden Helmet gold block air">
       <h2>Golden Warden Helmet</h2>
       <p class="recipe-description">Grants you ten extra hearts of health, but slows you down.</p>
       <div class="mcui">
@@ -1882,7 +1885,7 @@
           </div>
       </div>
     </article>
-    <article id="gladiatorshelmet" class="recipe">
+    <article id="gladiatorshelmet" class="recipe" data-search="Gladiators Helmet iron ingot Golden Matrix diamond air">
       <h2>Gladiators Helmet</h2>
       <p class="recipe-description">Grants you some extra Attack Damage, but prevents Regeneration.</p>
       <div class="mcui">
@@ -1903,7 +1906,7 @@
           </div>
       </div>
     </article>
-    <article id="shadowsamuraihelmet" class="recipe">
+    <article id="shadowsamuraihelmet" class="recipe" data-search="Shadow Samurai Helmet Pristine Diamond Black Onyx air">
       <h2>Shadow Samurai Helmet</h2>
       <p class="recipe-description">Gives decent Attack Damage and Movement Speed.</p>
       <div class="mcui">
@@ -1924,7 +1927,7 @@
           </div>
       </div>
     </article>
-    <article id="hellfirehelmet" class="recipe">
+    <article id="hellfirehelmet" class="recipe" data-search="Hellfire Helmet netherite helmet Hellfire">
       <h2>Hellfire Helmet</h2>
       <p class="recipe-description">Good Helmet that also grants great attack damage and fire resistance. Tiered.</p>
       <div class="mcui">
@@ -1945,7 +1948,7 @@
           </div>
       </div>
     </article>
-    <article id="burststopperchestplate" class="recipe">
+    <article id="burststopperchestplate" class="recipe" data-search="Burststopper Chestplate copper block air">
       <h2>Burststopper Chestplate</h2>
       <p class="recipe-description">Prevents you from taking more than 4 Hearts of damage at once.</p>
       <div class="mcui">
@@ -1966,7 +1969,7 @@
           </div>
       </div>
     </article>
-    <article id="darkhelmet" class="recipe">
+    <article id="darkhelmet" class="recipe" data-search="Dark Helmet Pristine Diamond obsidian air">
       <h2>Dark Helmet</h2>
       <p class="recipe-description">Grants Extra Attach Damage and Movement Speed.</p>
       <div class="mcui">
@@ -1987,7 +1990,7 @@
           </div>
       </div>
     </article>
-    <article id="darkarmorchestplate" class="recipe">
+    <article id="darkarmorchestplate" class="recipe" data-search="Dark Armor Chestplate Pristine Diamond obsidian air">
       <h2>Dark Armor Chestplate</h2>
       <p class="recipe-description">Grants Extra Attach Damage and Movement Speed.</p>
       <div class="mcui">
@@ -2008,7 +2011,7 @@
           </div>
       </div>
     </article>
-    <article id="darkarmorpants" class="recipe">
+    <article id="darkarmorpants" class="recipe" data-search="Dark Armor Pants Pristine Diamond obsidian air">
       <h2>Dark Armor Pants</h2>
       <p class="recipe-description">Grants Extra Attach Damage and Movement Speed.</p>
       <div class="mcui">
@@ -2029,7 +2032,7 @@
           </div>
       </div>
     </article>
-    <article id="darkarmorshoes" class="recipe">
+    <article id="darkarmorshoes" class="recipe" data-search="Dark Armor Shoes Pristine Diamond obsidian air">
       <h2>Dark Armor Shoes</h2>
       <p class="recipe-description">Grants Extra Attach Damage and Movement Speed.</p>
       <div class="mcui">
@@ -2050,7 +2053,7 @@
           </div>
       </div>
     </article>
-    <article id="perfectarmorhelmet" class="recipe">
+    <article id="perfectarmorhelmet" class="recipe" data-search="Perfect Armor Helmet Pristine Diamond air">
       <h2>Perfect Armor Helmet</h2>
       <p class="recipe-description">Really Strong Armor. Seriously.</p>
       <div class="mcui">
@@ -2071,7 +2074,7 @@
           </div>
       </div>
     </article>
-    <article id="perfectarmorchestplate" class="recipe">
+    <article id="perfectarmorchestplate" class="recipe" data-search="Perfect Armor Chestplate Pristine Diamond air">
       <h2>Perfect Armor Chestplate</h2>
       <p class="recipe-description">Really Strong Armor. Seriously.</p>
       <div class="mcui">
@@ -2092,7 +2095,7 @@
           </div>
       </div>
     </article>
-    <article id="perfectarmorpants" class="recipe">
+    <article id="perfectarmorpants" class="recipe" data-search="Perfect Armor Pants Pristine Diamond air">
       <h2>Perfect Armor Pants</h2>
       <p class="recipe-description">Really Strong Armor. Seriously.</p>
       <div class="mcui">
@@ -2113,7 +2116,7 @@
           </div>
       </div>
     </article>
-    <article id="perfectarmorshoes" class="recipe">
+    <article id="perfectarmorshoes" class="recipe" data-search="Perfect Armor Shoes Pristine Diamond air">
       <h2>Perfect Armor Shoes</h2>
       <p class="recipe-description">Really Strong Armor. Seriously.</p>
       <div class="mcui">
@@ -2134,7 +2137,7 @@
           </div>
       </div>
     </article>
-    <article id="minershelmet" class="recipe">
+    <article id="minershelmet" class="recipe" data-search="Miners Helmet smooth stone Ember Fragment air">
       <h2>Miners Helmet</h2>
       <p class="recipe-description">Grants Haste 3 when full set is worn.</p>
       <div class="mcui">
@@ -2155,7 +2158,7 @@
           </div>
       </div>
     </article>
-    <article id="minersarmorchestplate" class="recipe">
+    <article id="minersarmorchestplate" class="recipe" data-search="Miners Armor Chestplate smooth stone air Ember Fragment">
       <h2>Miners Armor Chestplate</h2>
       <p class="recipe-description">Grants Haste 3 when full set is worn.</p>
       <div class="mcui">
@@ -2176,7 +2179,7 @@
           </div>
       </div>
     </article>
-    <article id="minersarmorpants" class="recipe">
+    <article id="minersarmorpants" class="recipe" data-search="Miners Armor Pants smooth stone Ember Fragment air">
       <h2>Miners Armor Pants</h2>
       <p class="recipe-description">Grants Haste 3 when full set is worn.</p>
       <div class="mcui">
@@ -2197,7 +2200,7 @@
           </div>
       </div>
     </article>
-    <article id="minersarmorshoes" class="recipe">
+    <article id="minersarmorshoes" class="recipe" data-search="Miners Armor Shoes smooth stone air Ember Fragment">
       <h2>Miners Armor Shoes</h2>
       <p class="recipe-description">Grants Haste 3 when full set is worn.</p>
       <div class="mcui">
@@ -2218,7 +2221,7 @@
           </div>
       </div>
     </article>
-    <article id="blazehelmet" class="recipe">
+    <article id="blazehelmet" class="recipe" data-search="Blaze Helmet blaze rod Ember Fragment air">
       <h2>Blaze Helmet</h2>
       <p class="recipe-description">Sneaking lights surrounding enemies on fire for a short while.</p>
       <div class="mcui">
@@ -2239,7 +2242,7 @@
           </div>
       </div>
     </article>
-    <article id="blazearmorchestplate" class="recipe">
+    <article id="blazearmorchestplate" class="recipe" data-search="Blaze Armor Chestplate blaze rod air Ember Fragment">
       <h2>Blaze Armor Chestplate</h2>
       <p class="recipe-description">Sneaking lights surrounding enemies on fire for a short while.</p>
       <div class="mcui">
@@ -2260,7 +2263,7 @@
           </div>
       </div>
     </article>
-    <article id="blazearmorpants" class="recipe">
+    <article id="blazearmorpants" class="recipe" data-search="Blaze Armor Pants blaze rod Ember Fragment air">
       <h2>Blaze Armor Pants</h2>
       <p class="recipe-description">Sneaking lights surrounding enemies on fire for a short while.</p>
       <div class="mcui">
@@ -2281,7 +2284,7 @@
           </div>
       </div>
     </article>
-    <article id="blazearmorshoes" class="recipe">
+    <article id="blazearmorshoes" class="recipe" data-search="Blaze Armor Shoes blaze rod air Ember Fragment">
       <h2>Blaze Armor Shoes</h2>
       <p class="recipe-description">Sneaking lights surrounding enemies on fire for a short while.</p>
       <div class="mcui">
@@ -2302,7 +2305,7 @@
           </div>
       </div>
     </article>
-    <article id="frozenblazehelmet" class="recipe">
+    <article id="frozenblazehelmet" class="recipe" data-search="Frozen Blaze Helmet blue ice Blaze Helmet">
       <h2>Frozen Blaze Helmet</h2>
       <p class="recipe-description">Provides Fire Immunity. Slows down and damages surrounding enemies while sneaking.</p>
       <div class="mcui">
@@ -2323,7 +2326,7 @@
           </div>
       </div>
     </article>
-    <article id="frozenblazearmorchestplate" class="recipe">
+    <article id="frozenblazearmorchestplate" class="recipe" data-search="Frozen Blaze Armor Chestplate blue ice Blaze Armor Chestplate">
       <h2>Frozen Blaze Armor Chestplate</h2>
       <p class="recipe-description">Provides Fire Immunity. Slows down and damages surrounding enemies while sneaking.</p>
       <div class="mcui">
@@ -2344,7 +2347,7 @@
           </div>
       </div>
     </article>
-    <article id="frozenblazearmorpants" class="recipe">
+    <article id="frozenblazearmorpants" class="recipe" data-search="Frozen Blaze Armor Pants blue ice Blaze Armor Pants">
       <h2>Frozen Blaze Armor Pants</h2>
       <p class="recipe-description">Provides Fire Immunity. Slows down and damages surrounding enemies while sneaking.</p>
       <div class="mcui">
@@ -2365,7 +2368,7 @@
           </div>
       </div>
     </article>
-    <article id="frozenblazearmorshoes" class="recipe">
+    <article id="frozenblazearmorshoes" class="recipe" data-search="Frozen Blaze Armor Shoes blue ice Blaze Armor Shoes">
       <h2>Frozen Blaze Armor Shoes</h2>
       <p class="recipe-description">Provides Fire Immunity. Slows down and damages surrounding enemies while sneaking.</p>
       <div class="mcui">
@@ -2386,7 +2389,7 @@
           </div>
       </div>
     </article>
-    <article id="guardianhelmet" class="recipe">
+    <article id="guardianhelmet" class="recipe" data-search="Guardian Helmet Prismarine Fragment air">
       <h2>Guardian Helmet</h2>
       <p class="recipe-description">Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces.</p>
       <div class="mcui">
@@ -2407,7 +2410,7 @@
           </div>
       </div>
     </article>
-    <article id="guardianarmorchestplate" class="recipe">
+    <article id="guardianarmorchestplate" class="recipe" data-search="Guardian Armor Chestplate Prismarine Fragment air">
       <h2>Guardian Armor Chestplate</h2>
       <p class="recipe-description">Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces.</p>
       <div class="mcui">
@@ -2428,7 +2431,7 @@
           </div>
       </div>
     </article>
-    <article id="guardianarmorpants" class="recipe">
+    <article id="guardianarmorpants" class="recipe" data-search="Guardian Armor Pants Prismarine Fragment air">
       <h2>Guardian Armor Pants</h2>
       <p class="recipe-description">Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces.</p>
       <div class="mcui">
@@ -2449,7 +2452,7 @@
           </div>
       </div>
     </article>
-    <article id="guardianarmorshoes" class="recipe">
+    <article id="guardianarmorshoes" class="recipe" data-search="Guardian Armor Shoes Prismarine Fragment air">
       <h2>Guardian Armor Shoes</h2>
       <p class="recipe-description">Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces.</p>
       <div class="mcui">
@@ -2471,4 +2474,5 @@
       </div>
     </article></div></body>
   <script src="css/minetip.js" defer></script>
+  <script src="css/search.js" defer></script>
 </html>
