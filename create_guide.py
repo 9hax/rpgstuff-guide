@@ -188,7 +188,7 @@ startTemplate = '''
   </head>
 
   <body>
-    <h1><a href="#">RPGStuff Crafting and Item Guide - by 9hax</a></h1>
+    <h1>RPGStuff Crafting and Item Guide - by <a href="https://9h.ax">9hax</a></h1>
     <div id="minetip-tooltip" style="display: none">
       <span class="minetip-title" id="minetip-text">Minecraft Tip</span>
     </div>
