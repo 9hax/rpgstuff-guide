@@ -208,6 +208,11 @@
     " 0 121131",
     "Betterer Pickaxe, needs fuel"
   ],
+  "Mining Drill x8000": [
+    ["Pristine Diamond", "iron_ingot", "Mining Drill x6000", "Ruby Drill Engine"],
+    " 0 121131",
+    "Betterer Pickaxe, needs fuel"
+  ],
   "Ritual Blade": [
     ["coal_block", "copper_block", "Basic Staff Core"],
     " 0  1  2 ",
