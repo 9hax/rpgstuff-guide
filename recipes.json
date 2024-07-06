@@ -38,6 +38,15 @@
     ["netherite_ingot", "Energized Powder", "Golden Matrix"],
     "010020010"
   ],
+  "Ruby Drill Engine": [
+    ["iron_block", "Fine Ruby Gemstone", "Golden Matrix"],
+    "010020010"
+  ],
+  "Gemstone (Tiered)": [
+    ["Gemstone (Tiered)"],
+    "0000",
+    "Rarely Found when using a mining drill below Y=0. (40% Ruby, 15% Sapphire, Amethyst, Peridot, 10% Apatite, 5% Topaz)"
+  ],
   "Soul of the Revenant": "Chance (1/50) of being dropped by a Revenant Zombie.",
   "Lumber Axe": [
     ["iron_ingot", "stick", "Charged Emerald"],
