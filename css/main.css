@@ -101,7 +101,7 @@ body {
 }
 
 .mcui {
-  display: inline-block;
+  display: block;
   font-family: Minecraft;
   position: relative;
   background-color: #C6C6C6;
@@ -114,8 +114,6 @@ body {
 
 .description {
   font-family: "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif;
-  overflow-wrap: break-word;
-  max-width:224px;
 }
 
 .mcui-Crafting_Table>*,
