@@ -96,19 +96,21 @@ def create_recipe_snippets():
         if not item['recipe']:
             snippet = str(descriptionTemplate)
         else:
-            snippet = ''''''
+            snippet = ''
+            size = "3x3" if len(item['recipe']) == 3 else "2x2"
             for row in item['recipe']:
-                snippet = snippet + '''<span class="mcui-row">'''
+                snippet = snippet
                 for slot in row:
                     if slot == 'air':
-                        snippet = snippet + '''<span class="invslot"> </span>'''
+                        snippet = snippet + '<div class="invslot"></div>'
                     else:
                         slothtml = str(slotTemplate)
                         slothtml = slothtml.replace("ITEMID", slot.lower().replace(" ",""))
                         slothtml = slothtml.replace("ITEM", slot)
                         snippet = snippet + slothtml
-                snippet = snippet + '</span>'
-            snippet = recipeTemplate.replace("RECIPE", snippet)
+                snippet = snippet
+            snippet = recipeTemplate.replace("RECIPE", snippet).replace("SIZE", size)
+
         snippet = snippet.replace("TITLEID", item['title'].lower().replace(" ", ""))
         snippet = snippet.replace("TITLE", item['title'])
         if 'description' in item.keys():
@@ -130,55 +132,49 @@ def build_page():
 
 
 descriptionTemplate = '''
-    <div id="TITLEID">
-      <div class="mcui mcui-Crafting_Table pixel-image">
-        TITLE<br />
-        <div class="description">DESCRIPTION</div><br />
-        <span class="mcui-output">
-          <span class="invslot invslot-large">
-            <span class="invslot-item invslot-item-image">
-              <a href="#TITLEID" title="TITLE" class="minetext">
+    <article id="TITLEID" class="recipe">
+      <h2>TITLE</h2>
+      <p class="recipe-description">DESCRIPTION</p>
+      <div class="mcui">
+        <div class="mcui-output">
+          <div class="invslot invslot-large">
+            <a href="#TITLEID" title="TITLE" class="invslot-image minetext">
                 <img
                   src="itemassets/TITLE.png"
                   width="32"
                   height="32"
                 />
-              </a>
-              <!--<span class="invslot-stacksize">1</span>-->
-            </span>
-          </span>
-        </span>
+            </a>
+            <span class="invslot-text"></span>
+          </div>
       </div>
-    </div>'''
+    </article>'''
 
 
 recipeTemplate = '''
-    <div id="TITLEID">
-      <div class="mcui mcui-Crafting_Table pixel-image">
-        TITLE<br />
-        <div class="description">DESCRIPTION</div><br>
-        <span class="mcui-input">
+    <article id="TITLEID" class="recipe">
+      <h2>TITLE</h2>
+      <p class="recipe-description">DESCRIPTION</p>
+      <div class="mcui">
+        <div class="mcui-input input-SIZE">
           RECIPE
-        </span>
-        <span class="mcui-arrow"><br /></span>
-        <span class="mcui-output">
-          <span class="invslot invslot-large">
-            <span class="invslot-item invslot-item-image">
-              <a href="#TITLEID" title="TITLE" class="minetext">
+        </div>
+        <div class="mcui-arrow"><span class="arr"></span></div>
+        <div class="mcui-output">
+          <div class="invslot">
+            <a href="#TITLEID" title="TITLE" class="invslot-image minetext">
                 <img
                   src="itemassets/TITLE.png"
                   width="32"
                   height="32"
                 />
-              </a>
-              <!--<span class="invslot-stacksize">1</span>-->
-            </span>
-          </span>
-        </span>
+            </a>
+            <span class="invslot-text"></span>
+          </div>
       </div>
-    </div>'''
+    </article>'''
 
-slotTemplate = '''<span class="invslot"><span class="invslot-item invslot-image-item"><a href="#ITEMID" title="ITEM" class="minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a></span></span>'''
+slotTemplate = '''<div class="invslot"><a href="#ITEMID" title="ITEM" class="invslot-image minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a><span class="invslot-text"></span></div>'''
 
 
 startTemplate = '''
@@ -192,7 +188,7 @@ startTemplate = '''
   </head>
 
   <body>
-    <center><h1> RPGStuff Crafting and Item Guide - by 9hax </h1></center><br>
+    <h1><a href="#">RPGStuff Crafting and Item Guide - by 9hax</a></h1>
     <div id="minetip-tooltip" style="display: none">
       <span class="minetip-title" id="minetip-text">Minecraft Tip</span>
     </div>
