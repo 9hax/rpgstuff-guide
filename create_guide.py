@@ -131,7 +131,7 @@ def build_page():
 
 descriptionTemplate = '''
     <div id="TITLEID">
-      <span class="mcui mcui-Crafting_Table pixel-image">
+      <div class="mcui mcui-Crafting_Table pixel-image">
         TITLE<br />
         <div class="description">DESCRIPTION</div><br />
         <span class="mcui-output">
@@ -148,13 +148,13 @@ descriptionTemplate = '''
             </span>
           </span>
         </span>
-      </span>
+      </div>
     </div>'''
 
 
 recipeTemplate = '''
     <div id="TITLEID">
-      <span class="mcui mcui-Crafting_Table pixel-image">
+      <div class="mcui mcui-Crafting_Table pixel-image">
         TITLE<br />
         <div class="description">DESCRIPTION</div><br>
         <span class="mcui-input">
@@ -175,7 +175,7 @@ recipeTemplate = '''
             </span>
           </span>
         </span>
-      </span>
+      </div>
     </div>'''
 
 slotTemplate = '''<span class="invslot"><span class="invslot-item invslot-image-item"><a href="#ITEMID" title="ITEM" class="minetext"><img src="itemassets/ITEM.png" width="32" height="32" /></a></span></span>'''
