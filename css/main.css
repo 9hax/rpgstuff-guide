@@ -101,6 +101,7 @@ body {
 }
 
 .mcui {
+  width: 100%;
   display: block;
   font-family: Minecraft;
   position: relative;
@@ -109,7 +110,6 @@ body {
   border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
   padding: 6px;
   text-align: left;
-  vertical-align: bottom;
 }
 
 .description {
