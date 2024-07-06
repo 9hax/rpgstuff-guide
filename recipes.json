@@ -85,7 +85,7 @@
   ],
   "Simple Staff of Necromancy": [
     ["rotten_flesh", "Basic Staff Core"],
-    " 0  1  0 ",
+    " 0  1  1 ",
     "Spawns 5 Zombies near the targeted block."
   ],
   "Advanced Staff of Necromancy": [
@@ -346,7 +346,7 @@
   "Golden Warden Helmet": [
     ["gold_block", "Iron Warden Helmet"],
     "000010   ",
-    "Grants you ten extra healts of health, but slows you down."
+    "Grants you ten extra hearts of health, but slows you down."
   ],
   "Gladiators Helmet": [
     ["diamond","iron_ingot", "Golden Matrix"],
