@@ -137,7 +137,7 @@ descriptionTemplate = '''
         <span class="mcui-output">
           <span class="invslot invslot-large">
             <span class="invslot-item invslot-item-image">
-              <a href="" title="TITLE" class="minetext">
+              <a href="#TITLEID" title="TITLE" class="minetext">
                 <img
                   src="itemassets/TITLE.png"
                   width="32"
