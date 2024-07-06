@@ -16,7 +16,7 @@ body {
   grid-template-rows: masonry;
 }
 
-.collection div {
+.collection > div {
   max-width: 224px;
   width:100%;
 }
