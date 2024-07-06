@@ -1,0 +1,561 @@
+body {
+  font-family: Minecraft;
+  margin: 0;
+  background: rgb(4,115,14);
+  background: linear-gradient(36deg, rgba(4,115,14,1) 0%, rgba(33,33,221,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.collection {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  grid-template-rows: masonry;
+}
+
+.collection div {
+  max-width: 224px;
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(minecraft.woff) format('woff'), url(minecraft.ttf) format('truetype')
+}
+
+.invslot {
+  position: relative;
+  display: inline-block;
+  background: #8B8B8B no-repeat center center / 32px 32px;
+  border: 2px solid;
+  border-color: #373737 #FFF #FFF #373737;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  vertical-align: bottom
+}
+
+.invslot:before,
+.invslot:after {
+  content: "";
+  position: absolute;
+  background-color: #8B8B8B;
+  height: 2px;
+  width: 2px;
+  pointer-events: none
+}
+
+.invslot:before {
+  bottom: -2px;
+  left: -2px
+}
+
+.invslot:after {
+  top: -2px;
+  right: -2px
+}
+
+.invslot-large {
+  padding: 8px
+}
+
+.invslot-item,
+.invslot-item>a:first-child {
+  position: relative;
+  display: block;
+  margin: -2px;
+  padding: 2px
+}
+
+.invslot-stacksize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: Minecraft, sans-serif !important;
+  font-weight: normal !important;
+  color: #FFF !important;
+  text-shadow: 2px 2px 0 #3F3F3F;
+  filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+  z-index: 2
+}
+
+.invslot-plain {
+  background-color: transparent;
+  border: 0
+}
+
+.invslot-plain:before,
+.invslot-plain:after {
+  content: none
+}
+
+.invslot-plain>.invslot-item,
+.invslot-plain>.invslot-item>a:first-child {
+  margin: 0;
+  padding: 0
+}
+
+.mcui {
+  display: inline-block;
+  font-family: Minecraft;
+  position: relative;
+  background-color: #C6C6C6;
+  border: 2px solid;
+  border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+  padding: 6px;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.description {
+  font-family: "Liberation Sans", Arial, Helvetica, FreeSans, sans-serif;
+  overflow-wrap: break-word;
+  max-width:224px;
+}
+
+.mcui-Crafting_Table>*,
+.mcui-Furnace>* {
+  display: inline-block;
+  vertical-align: top
+}
+
+.mcui-Crafting_Table .mcui-row {
+  display: block
+}
+
+.mcui-Crafting_Table>.mcui-arrow {
+  background: url("../images/arrow_small.png") no-repeat;
+  width: 32px;
+  height: 26px;
+  margin: 40px 4px 0
+}
+
+.mcui-Crafting_Table>.mcui-output {
+  margin-top: 28px
+}
+
+.mcui-Crafting_Table>.mcui-icons {
+  position: absolute;
+  top: 6px;
+  right: 6px
+}
+
+.mcui-Crafting_Table .mcui-shapeless,
+.mcui-Crafting_Table .mcui-fixed {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 15px;
+  cursor: help
+}
+
+.mcui-Furnace .mcui-fuel {
+  display: block;
+  width: 36px;
+  height: 36px
+}
+
+.mcui-Furnace>.mcui-arrow {
+  width: 44px;
+  height: 32px;
+  margin: 36px 18px 0 14px
+}
+
+.mcui-Furnace>.mcui-output {
+  margin-top: 28px
+}
+
+.mcui-Brewing_Stand>* {
+  display: block
+}
+
+.mcui-Brewing_Stand .invslot {
+  vertical-align: top
+}
+
+.mcui-Brewing_Stand>.mcui-input {
+  text-align: center
+}
+
+.mcui-Brewing_Stand>.mcui-input>.invslot {
+  margin-top: 3px
+}
+
+.mcui-Brewing_Stand .mcui-bubbling,
+.mcui-Brewing_Stand .mcui-arrow {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 57px
+}
+
+.mcui-Brewing_Stand>.mcui-paths {
+  position: relative;
+  width: 60px;
+  height: 40px;
+  margin: -20px auto -16px;
+  z-index: 1
+}
+
+.mcui-Brewing_Stand .mcui-output2 {
+  margin: 14px 10px 0
+}
+
+.mcui-Hotbar {
+  display: inline-block;
+  position: relative;
+  border: 0;
+  padding: 0;
+  background-color: transparent
+}
+
+.mcui-Hotbar>.mcui-selector {
+  position: absolute;
+  top: -2px;
+  margin-left: -2px
+}
+
+.mcui-Hotbar>.mcui-slots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2px
+}
+
+.mcui-Hotbar .invslot {
+  margin: 4px
+}
+
+.pixel-image,
+.invslot-item-image,
+.sprite {
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor
+}
+
+#minetip-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #100010;
+  background-color: rgba(16, 0, 16, 0.94);
+  color: #FFF;
+  padding: 0.375em;
+  font-family: Minecraft, sans-serif;
+  font-size: 16px;
+  word-spacing: 4px;
+  line-height: 1.25em;
+  text-shadow: 0.125em 0.125em 0 #3F3F3F;
+  margin: 0.125em 0.25em;
+  pointer-events: none;
+  z-index: 99
+}
+
+#minetip-tooltip:before {
+  content: "";
+  position: absolute;
+  top: 0.125em;
+  right: -0.125em;
+  bottom: 0.125em;
+  left: -0.125em;
+  border: 0.125em solid #100010;
+  border-style: none solid;
+  border-color: rgba(16, 0, 16, 0.94)
+}
+
+#minetip-tooltip:after {
+  content: "";
+  position: absolute;
+  top: 0.125em;
+  right: 0;
+  bottom: 0.125em;
+  left: 0;
+  border: 0.125em solid #2D0A63;
+  border-image: -webkit-linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1;
+  border-image: linear-gradient(rgba(80, 0, 255, 0.31), rgba(40, 0, 127, 0.31)) 1
+}
+
+#minetip-tooltip>.description,
+#minetip-tooltip>.minetip-description {
+  display: block;
+  margin-top: 0.25em
+}
+
+/*-------------------------------------------------------
+      Minecraft User Interface CSS
+-------------------------------------------------------*/
+
+@font-face {
+  font-family: Minecraft;
+  src: url('../fonts/minecraft.woff') format('woff'), url('../fonts/minecraft.ttf') format('truetype');
+}
+
+
+
+.mcui {
+  display: inline-block;
+  position: relative;
+  background-color: #C6C6C6;
+  border: 2px solid;
+  border-color: #DBDBDB #5B5B5B #5B5B5B #DBDBDB;
+  margin: 0;
+  padding: 6px;
+  text-align: left;
+  vertical-align: bottom
+}
+
+.mcui .mcui-hotbar {
+  display: inline-block;
+  position: relative;
+  border: 0;
+  padding: 0;
+  background-color: transparent
+}
+
+.mcui .mcui-hotbar>.mcui-selector {
+  position: absolute;
+  top: -2px;
+  margin-left: -2px
+}
+
+.mcui .mcui-hotbar>.mcui-slots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2px
+}
+
+.mcui .mcui-hotbar .mcui-invslot {
+  margin: 4px
+}
+
+
+.mcui .mcui-invslot {
+  position: relative;
+  display: inline-block;
+  background: #8B8B8B no-repeat center center / 32px 32px;
+  border: 2px solid;
+  border-color: #373737 #FFF #FFF #373737;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 1;
+  text-align: left;
+  vertical-align: bottom
+}
+
+.mcui .mcui-invslot:before,
+.mcui .mcui-invslot:after {
+  content: "";
+  position: absolute;
+  background-color: #8B8B8B;
+  height: 2px;
+  width: 2px;
+  pointer-events: none
+}
+
+.mcui .mcui-invslot:before {
+  bottom: -2px;
+  left: -2px
+}
+
+.mcui .mcui-invslot:after {
+  top: -2px;
+  right: -2px
+}
+
+.mcui .mcui-invslot-large {
+  padding: 8px
+}
+
+.mcui .mcui-invslot-item,
+.mcui .mcui-invslot-item>a:first-child {
+  position: relative;
+  display: block;
+  margin: -2px;
+  padding: 2px
+}
+
+.mcui .mcui-invslot-item-image>a.new:first-child {
+  background: url('../images/sprites_items_vanilla.png') no-repeat content-box;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+}
+
+.mcui .mcui-sprite {
+  display: inline-block;
+  vertical-align: text-top;
+  height: 16px;
+  width: 16px;
+  background-repeat: no-repeat
+}
+
+.mcui .mcui-inv-sprite {
+  background-image: url('../images/sprites_items_vanilla.png');
+  width: 32px;
+  height: 32px;
+  vertical-align: middle
+}
+
+.mcui .mcui-invslot-stacksize {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: Minecraft, sans-serif !important;
+  font-weight: normal !important;
+  color: #FFF !important;
+  text-shadow: 2px 2px 0 #3F3F3F;
+  filter: dropshadow(color=#3F3F3F, offx=2, offy=2);
+  z-index: 2
+}
+
+.mcui .mcui-invslot-plain {
+  background-color: transparent;
+  border: 0
+}
+
+.mcui .mcui-invslot-plain:before,
+.mcui .mcui-invslot-plain:after {
+  content: none
+}
+
+.mcui .mcui-invslot-plain>.mcui-invslot-item,
+.mcui .mcui-invslot-plain>.mcui-invslot-item>a:first-child {
+  margin: 0;
+  padding: 0
+}
+
+.mcui .mcui-crafting-table>*,
+.mcui .mcui-furnace>* {
+  display: inline-block;
+  vertical-align: top
+}
+
+.mcui .mcui-crafting-table .mcui-row {
+  display: block
+}
+
+.mcui .mcui-crafting-table>.mcui-arrow {
+  background: url('./images/arrow_small.png') no-repeat;
+  width: 32px;
+  height: 26px;
+  margin: 40px 4px 0
+}
+
+.mcui .mcui-crafting-table>.mcui-output {
+  margin-top: 28px
+}
+
+.mcui .mcui-crafting-table>.mcui-icons {
+  position: absolute;
+  top: 6px;
+  right: 6px
+}
+
+.mcui .mcui-crafting-table .mcui-shapeless,
+.mcui .mcui-crafting-table .mcui-fixed {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 15px;
+  cursor: help
+}
+
+.mcui .mcui-crafting-table .mcui-shapeless {
+  background-image: url('../images/shapeless.png')
+}
+
+.mcui .mcui-crafting-table .mcui-fixed {
+  background-image: url('../images/fixed.png')
+}
+
+.mcui .mcui-furnace .mcui-fuel {
+  display: block;
+  background: url('../images/fire.png') no-repeat;
+  width: 36px;
+  height: 36px
+}
+
+.mcui .mcui-furnace .mcui-fuel.mcui-inactive {
+  background-image: url('../images/fire_inactive.png')
+}
+
+.mcui .mcui-furnace>.mcui-arrow {
+  background: url('../images/arrow_progress.png') no-repeat;
+  width: 44px;
+  height: 32px;
+  margin: 36px 18px 0 14px
+}
+
+.mcui .mcui-furnace>.mcui-arrow.mcui-inactive {
+  background-image: url('../images/arrow_progress_inactive.png')
+}
+
+.mcui .mcui-furnace>.mcui-output {
+  margin-top: 28px
+}
+
+.mcui .mcui-brewing-stand>* {
+  display: block
+}
+
+.mcui .mcui-brewing-stand .mcui-invslot {
+  vertical-align: top
+}
+
+.mcui .mcui-brewing-stand>.mcui-input {
+  text-align: center
+}
+
+.mcui .mcui-brewing-stand>.mcui-input>.mcui-invslot {
+  margin-top: 3px
+}
+
+.mcui .mcui-brewing-stand .mcui-bubbling,
+.mcui .mcui-brewing-stand .mcui-arrow {
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 57px
+}
+
+.mcui .mcui-brewing-stand .mcui-bubbling {
+  background-image: url('../images/brewing_bubbles.gif')
+}
+
+.mcui .mcui-brewing-stand>.mcui-input.mcui-inactive>.mcui-bubbling {
+  background-image: url('../images/brewing_bubbles_inactive.png')
+}
+
+.mcui .mcui-brewing-stand .mcui-arrow {
+  background-image: url('../images/brewing_arrow.png')
+}
+
+.mcui .mcui-brewing-stand>.mcui-input.mcui-inactive>.mcui-arrow {
+  background-image: url('../images/brewing_arrow_inactive.png')
+}
+
+.mcui .mcui-brewing-stand>.mcui-paths {
+  position: relative;
+  background: url('../images/brewing_paths.png') no-repeat;
+  width: 60px;
+  height: 40px;
+  margin: -20px auto -16px;
+  z-index: 1
+}
+
+.mcui .mcui-brewing-stand .mcui-output .mcui-invslot {
+  background-image: url('../images/brewing_empty.png')
+}
+
+.mcui .mcui-brewing-stand .mcui-output2 {
+  margin: 14px 10px 0
+}
+
