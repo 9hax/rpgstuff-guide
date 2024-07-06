@@ -251,7 +251,7 @@
   "Staff of Restoration": [
     ["gold_block", "Basic Staff Core"],
     " 0 010 0 ",
-    "Heals Players in a small circle"
+    "Heals other Players in a small circle."
   ],
   "Frozen Scythe": [
     ["blue_ice", "Advanced Staff Core", "Pristine Diamond"],
