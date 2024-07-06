@@ -130,7 +130,7 @@ def build_page():
 
 
 descriptionTemplate = '''
-<div id="TITLEID">
+    <div id="TITLEID">
       <span class="mcui mcui-Crafting_Table pixel-image">
         TITLE<br />
         <div class="description">DESCRIPTION</div><br />
@@ -153,7 +153,7 @@ descriptionTemplate = '''
 
 
 recipeTemplate = '''
-<div id="TITLEID">
+    <div id="TITLEID">
       <span class="mcui mcui-Crafting_Table pixel-image">
         TITLE<br />
         <div class="description">DESCRIPTION</div><br>
