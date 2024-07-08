@@ -1,5 +1,6 @@
 {
   "Basic Staff Core": [["stick", "amethyst_shard"], " 0  1  0 "],
+  "Apatite Tipped Staff Core": [["Rough Apatite Gemstone", "Advanced Staff Core", "Basic Staff Core"], " 0  1  2 "],
   "Durable String": [["white_wool"], " 0  0  0 "],
   "Pristine Diamond": [["diamond_block", "nether_star"], "000010000"],
   "Charged Emerald": "Strike an emerald with lightning.",
@@ -254,7 +255,7 @@
     "Heals other Players in a small circle."
   ],
   "Frozen Scythe": [
-    ["blue_ice", "Advanced Staff Core", "Pristine Diamond"],
+    ["blue_ice", "Apatite Tipped Staff Core", "Pristine Diamond"],
     "02  1  1 ",
     "Shoots an ice bolt that slows everything in its path."
   ],
