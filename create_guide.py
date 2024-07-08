@@ -97,7 +97,9 @@ def create_recipe_snippets():
             snippet = str(descriptionTemplate)
         else:
             snippet = ''
-            materials = " ".join([*set(m.replace('_', ' ') for r in item['recipe'] for m in r)])
+            materials = [*set(m.replace('_', ' ') for r in item['recipe'] for m in r)]
+            materials.sort()
+            materials = " ".join(materials)
             size = "3x3" if len(item['recipe']) == 3 else "2x2"
             for row in item['recipe']:
                 snippet = snippet
