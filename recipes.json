@@ -53,6 +53,21 @@
     "01 23  4 ",
     "Look Ma, I'm rich!"
   ],
+  "Peridot Blade": [
+    ["Fine Peridot Gemstone", "Indestructible Stick"],
+    " 0  1    ",
+    "Makes more damage the richer you are. Richnesds is calculated in gold Blocks."
+  ],
+  "Enrager": [
+    ["Rough Ruby Gemstone", "redstone_block", "goat_horn"],
+    "101020101",
+    "Makes every mob in your vicinity despise you for your actions."
+  ],
+  "Rock Crusher": [
+    ["Rough Ruby Gemstone", "iron_block"],
+    "1010 0101",
+    "Removes unwanted blocks from your inventory."
+  ],
   "Soul of the Revenant": "Chance (1/50) of being dropped by a Revenant Zombie.",
   "Lumber Axe": [
     ["iron_ingot", "stick", "Charged Emerald"],

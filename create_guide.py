@@ -58,7 +58,12 @@ def unify_recipe_list(recipes):
             new_recipe["recipe"] = None
         else:
             flat_recipe = recipes[recipe]
-            new_recipe["recipe"] = expand_recipe(flat_recipe[0], flat_recipe[1])
+            try:
+                new_recipe["recipe"] = expand_recipe(flat_recipe[0], flat_recipe[1])
+            except:
+                #print(traceback.format_exc())
+                print(f"ERROR! There was an error parsing the crafting recipe for {recipe}. Please Check Material Indexes.")
+                sys.exit(1)
             if len(flat_recipe) > 2:
                 new_recipe["description"] = flat_recipe[2]
         recipe_list.append(new_recipe)
@@ -97,9 +102,7 @@ def create_recipe_snippets():
             snippet = str(descriptionTemplate)
         else:
             snippet = ''
-            materials = [*set(m.replace('_', ' ') for r in item['recipe'] for m in r)]
-            materials.sort()
-            materials = " ".join(materials)
+            materials = " ".join(sorted([*set(m.replace('_', ' ') for r in item['recipe'] for m in r)]))
             size = "3x3" if len(item['recipe']) == 3 else "2x2"
             for row in item['recipe']:
                 snippet = snippet
