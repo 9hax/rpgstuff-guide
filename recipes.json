@@ -25,6 +25,7 @@
   "Tarantula Silk": "Chance (1/10) of being dropped by a Tarantula.",
   "Prismarine Fragment": "Chance (1/3) of being dropped by a Guardian.",
   "Gilded Prismarine Artifact": "Chance (1/25) of being dropped by an Elder Guardian, Grants immunity to all negative potion effects.",
+  "Stellar Remnant": "Dropped by the Cosmic Guardian",
   "Stellar Fragment": "Chance (1/5) of being dropped by the Cosmic Guardian.",
   "Sword of the Stars": [
     ["Stellar Fragment", "Indestructible Stick"],
@@ -143,6 +144,16 @@
     ["lapis_lazuli", "book"],
     "000010000",
     "Increases the Mana Cap by 100 while held in Offhand."
+  ],
+  "Tome of Lost Wisdom": [
+    ["Fine Leather", "Book of Forgotten Knowledge"],
+    "020212020",
+    "Increases the Mana Cap by 200 while held in Offhand."
+  ],
+  "Ancient Ornate Grimoire": [
+    ["Golden Matrix", "Tome of Lost Wisdom", "Rough Apatite Gemstone"],
+    "020212020",
+    "Increases the Mana Cap by 300 while held in Offhand."
   ],
   "Translocator": [
     ["Energized Crystal", "ender_pearl"],
@@ -337,17 +348,17 @@
   "Scholars Hood": [
     ["leather","Energized Crystal"],
     "0100 0   ",
-    "Multiplies your base mana by two."
+    "Multiplies your base mana by two and grants 10% extra magic damage."
   ],
   "Sorcerers Hood": [
     ["Energized Crystal", "Pristine Diamond"],
     "0100 0   ",
-    "Multiplies your base mana by three."
+    "Multiplies your base mana by three and grants 20% extra magic damage."
   ],
   "Grandmasters Hood": [
     ["Fine Leather", "Ender Core"],
     "0100 0   ",
-    "Multiplies your base mana by four."
+    "Multiplies your base mana by four and grants 40% extra magic damage."
   ],
   "All Seeing Eye": [
     ["Energized Powder","Heavy Ender Pearl"],
@@ -487,21 +498,21 @@
   "Guardian Helmet": [
     ["Prismarine Fragment"],
     "0000 0   ",
-    "Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces."
+    "Grants +75 Mana per piece."
   ],
   "Guardian Armor Chestplate": [
     ["Prismarine Fragment"],
     "0 0000000",
-    "Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces."
+    "Grants +75 Mana per piece."
   ],
   "Guardian Armor Pants": [
     ["Prismarine Fragment"],
     "0000 00 0",
-    "Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces."
+    "Grants +75 Mana per piece."
   ],
   "Guardian Armor Shoes": [
     ["Prismarine Fragment"],
     "0 00 0   ",
-    "Grants +75 Mana per piece, grants 1 Mana Regen per 2 Pieces."
+    "Grants +75 Mana per piece."
   ]
 }
